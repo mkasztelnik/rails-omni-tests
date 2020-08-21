@@ -4,5 +4,6 @@
   Welcome <%= current_user.name %>!
   <%= link_to "Sign Out", logout_path, method: :delete %>
 <% else %>
-  <%= link_to "Sign in", login_path %>
+  <%= link_to "Sign in by Checkin", "/auth/checkin" %>
+  <%= link_to "Sign in by PLGrid", "/auth/plgrid" %>
 <% end %>
