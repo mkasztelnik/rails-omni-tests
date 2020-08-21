@@ -1,24 +1,25 @@
-# README
+# Running
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+git clone https://github.com/mkasztelnik/rails-omni-tests.git
+cd rails-omni-test
+bundle install
+```
 
-Things you may want to cover:
+Create `.env` file with following content:
 
-* Ruby version
+```
+CHECKIN_HOST=aai-dev.egi.eu
+CHECKIN_IDENTIFIER=FIXME
+CHECKIN_SECRET=FIXME
 
-* System dependencies
+PLGRID_HOST=sso.pre.plgrid.pl
+PLGRID_IDENTIFIER=FIXME
+PLGRID_SECRET=FIXME
+```
+Run rails application:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails s
+```
+Visit http://localhost:3000
